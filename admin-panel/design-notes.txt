@@ -1,0 +1,10 @@
+3 divs for main content:
+    header
+    content
+    footer
+
+content divided in two other divs
+
+menu arrow with low alpha, full alpha on hover
+
+make sidebar menu text turn into circles with icons

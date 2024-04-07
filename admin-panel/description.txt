@@ -1,0 +1,6 @@
+admin panel with optional render:
+
+admin view
+mod view
+user view
+
