@@ -2,29 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="./styles.css">
     <title>Dashboard</title>
 </head>
 <body>
 
-    <!-- Header section -->
-    <div class="header h-16 bg-[#3f3b3b] text-[#feb062] text-3xl grid items-center">
-        Header
+    <div class="container flex flex-col h-screen justify-between max-w-full">
+        <!-- Header section -->
+        <div class="header h-24 bg-[#285659] text-[#CFCDC5] text-3xl grid items-center grid-cols-[1fr_1fr]">
+            <div class="logo"></div>
+            <div class="top-bar-menu"></div>
+            <div class="login-top absolute right-10">
+
+
+                <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" type="button">
+                    <span class="sr-only">Open user menu</span>
+                    <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="user photo">
+                </button>
+
+                <!-- Dropdown menu -->
+                <div id="dropdownAvatar" class="z-10 hidden bg-[#E2AC91] text-[#CFCDC5] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                    <div class="px-4 py-3 text-sm text-[#285659] dark:text-white">
+                    <div>Bonnie Green</div>
+                    <div class="font-medium truncate">name@flowbite.com</div>
+                    </div>
+                    <ul class="py-2 text-sm text-[#285659] dark:text-gray-200" aria-labelledby="dropdownUserAvatarButton">
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                    </li>
+                    </ul>
+                    <div class="py-2">
+                    <a href="#" class="block px-4 py-2 text-sm text-[#285659] hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                    </div>
+                </div>
+
+
+            </div>
+            Header
+        </div>
+
+        <!-- Main content section -->
+        <div class="content grid grid-cols-[200px_1fr] flex-grow">
+            <div class="sidebar bg-[#4D7265] text-[#CFCDC5] h-auto">Sidebar</div>
+            <div class="main-content">Content
+
+                
+
+
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <div class="footer h-32 bg-[#285659] text-[#CFCDC5]">
+            Footer
+        </div>
     </div>
 
-    <!-- Main content section -->
-    <div class="content grid grid-cols-[1fr_10fr]">
-        <div class="sidebar">Sidebar</div>
-        <div class="main-content">Content</div>
-    </div>
-
-    <!-- Footer section -->
-    <div class="footer">
-        Footer
-    </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>

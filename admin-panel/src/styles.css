@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 .first-color { 
-	background: #feb062; 
+	background: #285659; 
 }
 	
 .second-color { 
-	background: #575151; 
+	background: #4D7265; 
 }
 
 .third-color { 
-	background: #3f3b3b; 
+	background: #B2C7AD; 
 }
 
 .fourth-color { 
-	background: #e7b3b3; 
+	background: #CFCDC5;
+}
+
+.fifth-color {
+	background: #E2AC91;
 }
