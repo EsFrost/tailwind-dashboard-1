@@ -19,7 +19,7 @@
 
                 <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" type="button">
                     <span class="sr-only">Open user menu</span>
-                    <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="user photo">
+                    <img class="w-8 h-8 rounded-full" src="./media/user1.jpg" alt="user photo">
                 </button>
 
                 <!-- Dropdown menu -->
@@ -29,18 +29,18 @@
                     <div class="font-medium truncate">name@flowbite.com</div>
                     </div>
                     <ul class="py-2 text-sm text-[#285659] dark:text-gray-200" aria-labelledby="dropdownUserAvatarButton">
-                    <li>
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-                    </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                        </li>
                     </ul>
                     <div class="py-2">
-                    <a href="#" class="block px-4 py-2 text-sm text-[#285659] hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                        <a href="#" class="block px-4 py-2 text-sm text-[#285659] hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
                     </div>
                 </div>
 
@@ -52,11 +52,16 @@
         <!-- Main content section -->
         <div class="content grid grid-cols-[200px_1fr] flex-grow">
             <div class="sidebar bg-[#4D7265] text-[#CFCDC5] h-auto">Sidebar</div>
-            <div class="main-content">Content
-
-                
-
-
+            
+            <div class="main-content">
+                <div class="card w-[30rem] m-10 border bg-white drop-shadow-[7px_-2px_5px_rgba(0,0,0,0.25)] rounded-md  flex flex-col text-center items-center hover:scale-[1.05] transition-all ease-in-out duration-500 hover:drop-shadow-[-7px_2px_5px_rgba(0,0,0,0.25)]">
+                    <div class="card-header px-5 pb-2 mt-5">
+                        <img class="w-12 h-12 rounded-full" src="./media/user1.jpg" alt="user photo">
+                    </div>
+                    <div class="card-title px-5 py-2 text-[#709c68] text-2xl">Welcome "user"</div>
+                    <hr class="w-48 h-1 mx-auto mb-2 bg-[#8aa8b2] border-0 rounded dark:bg-gray-700">
+                    <div class="card-content pb-5 px-5 pt-2 text-[#709c68] text-lg">This is your dashboard. You can control your profile, settings with regards to the website and other stuff too.</div>
+                </div>
             </div>
         </div>
 
