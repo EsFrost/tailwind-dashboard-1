@@ -9,69 +9,99 @@
 </head>
 <body>
 
-    <div class="container flex flex-col h-screen justify-between max-w-full">
+    <div class="container flex flex-col h-screen justify-between max-w-full grid grid-cols-[265px_1fr]">
+
+        <div class="sidebar bg-[#709c68] text-[#f6f9f6] h-100">Sidebar
+            <div class="logo">Logo</div>
+        </div>
+        <div class="content flex flex-col h-screen">
         <!-- Header section -->
-        <div class="header h-24 bg-[#285659] text-[#CFCDC5] text-3xl grid items-center grid-cols-[1fr_1fr]">
-            <div class="logo"></div>
-            <div class="top-bar-menu"></div>
-            <div class="login-top absolute right-10">
-
-
-                <button id="dropdownUserAvatarButton" data-dropdown-toggle="dropdownAvatar" class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" type="button">
-                    <span class="sr-only">Open user menu</span>
-                    <img class="w-12 h-12 rounded-full object-cover" src="./media/user1.jpg" alt="user photo">
-                </button>
-
-                <!-- Dropdown menu -->
-                <div id="dropdownAvatar" class="z-10 hidden bg-[#E2AC91] text-[#CFCDC5] divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                    <div class="px-4 py-3 text-sm text-[#285659] dark:text-white">
-                    <div>Bonnie Green</div>
-                    <div class="font-medium truncate">name@flowbite.com</div>
-                    </div>
-                    <ul class="py-2 text-sm text-[#285659] dark:text-gray-200" aria-labelledby="dropdownUserAvatarButton">
-                        <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+            <div class="header h-24 text-[#090c08] text-3xl flex justify-end items-center">
+                
+                <div class="top-bar-menu mr-16">
+                    <ul class="flex justify-between text-[1.2rem] text-center cursor-pointer text-[#709c68]">
+                        <li class="w-auto rounded-md p-2 mx-4 transition-all ease-in-out group">
+                            <span class="bg-left-bottom bg-gradient-to-r from-[#709c68] to-[#afcbc9] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                                Menu item 1
+                            </span>
                         </li>
-                        <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                        <li class="w-auto rounded-md p-2 mx-4 transition-all ease-in-out group">
+                            <span class="bg-left-bottom bg-gradient-to-r from-[#709c68] to-[#afcbc9] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                                Menu item 2
+                            </span>
                         </li>
-                        <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                        <li class="w-auto rounded-md p-2 mx-4 transition-all ease-in-out group">
+                            <span class="bg-left-bottom bg-gradient-to-r from-[#709c68] to-[#afcbc9] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                                Menu item 3
+                            </span>
+                        </li>
+                        <li class="w-auto rounded-md p-2 mx-4 transition-all ease-in-out group">
+                            <span class="bg-left-bottom bg-gradient-to-r from-[#709c68] to-[#afcbc9] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                                Menu item 4
+                            </span>
                         </li>
                     </ul>
-                    <div class="py-2">
-                        <a href="#" class="block px-4 py-2 text-sm text-[#285659] hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
-                    </div>
                 </div>
 
+                <div class="login-top mr-10">
 
+                    <div class="min-h-screen py-6 flex flex-col justify-center sm:py-12">
+                        <div class="flex items-center justify-center p-12">
+                          <div class=" relative inline-block text-left dropdown">
+                            <span class="rounded-md shadow-sm">
+                                <button class="inline-flex justify-center w-full px-4 py-2 leading-5 transition duration-150 ease-in-out rounded-md " 
+                               type="button" aria-haspopup="true" aria-expanded="true" aria-controls="headlessui-menu-items-117">
+                                    <span>
+                                        <img class="w-12 h-12 rounded-full object-cover" src="./media/user1.jpg" alt="user photo">
+                                    </span>
+                                </button>
+                            </span>
+                            
+                            <div class="opacity-0 text-[#8aa8b2] invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
+                              <div class="bg-[#f6f9f6] absolute right-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none" aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
+                                <div class="px-4 py-3">         
+                                  <p class="text-sm leading-5 hover:cursor-default">Signed in as</p>
+                                  <p class="text-sm font-medium leading-5 hover:cursor-default">tom@example.com</p>
+                                </div>
+                                <div class="py-1">
+                                  <a href="javascript:void(0)" tabindex="0" class="text-[#8aa8b2] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"  role="menuitem" >Account settings</a>
+                                  <a href="javascript:void(0)" tabindex="1" class="text-[#8aa8b2] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"  role="menuitem" >Support</a>
+                                  <span role="menuitem" tabindex="-1" class="flex justify-between hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white w-full px-4 py-2 text-sm leading-5 text-left text-[#8aa8b2] cursor-not-allowed opacity-50" aria-disabled="true">New feature (soon)</span>
+                                  <a href="javascript:void(0)" tabindex="2" class="text-[#8aa8b2] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white flex justify-between w-full px-4 py-2 text-sm leading-5 text-left" role="menuitem" >License</a></div>
+                                <div class="py-1">
+                                  <a href="javascript:void(0)" tabindex="3" class="text-[#8aa8b2] hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"  role="menuitem" >Sign out</a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>              
+                    </div>
+
+
+                </div>
             </div>
-            Header
-        </div>
 
-        <!-- Main content section -->
-        <div class="content grid grid-cols-[200px_1fr] flex-grow">
-            <div class="sidebar bg-[#4D7265] text-[#CFCDC5] h-auto">Sidebar</div>
+            <!-- Main content section -->
             
-            <div class="main-content">
-                <div class="card w-[30rem] m-10 border bg-white drop-shadow-[7px_-2px_5px_rgba(0,0,0,0.25)] rounded-md  flex flex-col text-center items-center hover:scale-[1.05] transition-all ease-in-out duration-500 hover:drop-shadow-[-7px_2px_5px_rgba(0,0,0,0.25)]">
-                    <div class="card-header px-5 pb-2 mt-5">
-                        <img class="w-12 h-12 rounded-full object-cover" src="./media/user1.jpg" alt="user photo">
+                <div class="main-content flex-grow">
+                    <div class="card w-[30rem] m-10 border bg-white drop-shadow-[7px_-2px_5px_rgba(0,0,0,0.25)] rounded-md flex flex-col text-center items-center hover:scale-[1.05] transition-all ease-in-out duration-500 hover:drop-shadow-[-7px_2px_5px_rgba(0,0,0,0.25)]">
+                        <div class="card-header px-5 pb-2 mt-5">
+                            <img class="w-12 h-12 rounded-full object-cover" src="./media/user1.jpg" alt="user photo">
+                        </div>
+                        <div class="card-title px-5 py-2 text-[#709c68] text-2xl">Welcome "user"</div>
+                        <hr class="w-48 h-1 mx-auto mb-2 bg-[#8aa8b2] border-0 rounded dark:bg-gray-700">
+                        <div class="card-content pb-5 px-5 pt-2 text-[#709c68] text-lg">This is your dashboard. You can control your profile, settings with regards to the website and other stuff too.</div>
                     </div>
-                    <div class="card-title px-5 py-2 text-[#709c68] text-2xl">Welcome "user"</div>
-                    <hr class="w-48 h-1 mx-auto mb-2 bg-[#8aa8b2] border-0 rounded dark:bg-gray-700">
-                    <div class="card-content pb-5 px-5 pt-2 text-[#709c68] text-lg">This is your dashboard. You can control your profile, settings with regards to the website and other stuff too.</div>
+                </div>
+                <!-- Footer section -->
+                <div class="footer h-16 text-[#090c08] text-center">
+                    All rights reserved&reg; 2024 &copy;
                 </div>
             </div>
-        </div>
-
-        <!-- Footer section -->
-        <div class="footer h-32 bg-[#285659] text-[#CFCDC5]">
-            Footer
         </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="./node_modules/preline/dist/preline.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>
