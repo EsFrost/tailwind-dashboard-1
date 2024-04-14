@@ -12,11 +12,14 @@
 
     <div class="container h-screen justify-between max-w-full grid grid-cols-[265px_1fr]">
 
-        <div class="sidebar bg-[#709c68] text-[#f6f9f6] h-100 flex flex-col">
+        <div class="sidebar bg-[#709c68] text-[#f6f9f6] h-100 flex flex-col sm:hidden md:flex">
             <div class="logo">
                 <a href="#">
                     <img src="./media/logo-2.png" alt="Admin dash - User friendly dashboard">
                 </a>
+            </div>
+            <div class="absolute top-[25px] left-[275px] text-[#f6f9f6] text-3xl bg-[#709c68] w-[3rem] h-[3rem] rounded-full flex justify-center items-center cursor-pointer">
+                <i class="fa-solid fa-arrow-left"></i>
             </div>
             <div class="cursor-pointer hover:bg-[#8aa8b2] transition-all ease-in-out duration-500 pl-4 mt-2">
                 <div class="hover:scale-[1.05] transition-all ease-in-out duration-500">
@@ -127,9 +130,8 @@
                           </div>
                         </div>              
                     </div>
-
-
                 </div>
+
             </div>
 
             <!-- Main content section -->
@@ -144,6 +146,7 @@
                         <div class="card-content pb-5 px-5 pt-2 text-[#709c68] text-lg">This is your dashboard. You can control your profile, settings with regards to the website and other stuff too.</div>
                     </div>
                 </div>
+                
                 <!-- Footer section -->
                 <div class="footer h-16 text-[#090c08] text-center">
                     All rights reserved&reg; 2024 &copy;
